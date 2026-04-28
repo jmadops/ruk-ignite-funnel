@@ -879,7 +879,7 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; font-weight: 900; letter-spacing: -0.
 
 .proof-video {
     max-width: 880px;
-    margin: 0 auto 56px;
+    margin: 32px auto 56px;
 }
 
 .proof-video-frame {
