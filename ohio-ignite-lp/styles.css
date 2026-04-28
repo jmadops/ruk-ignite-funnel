@@ -870,6 +870,44 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; font-weight: 900; letter-spacing: -0.
 }
 
 /* ============================================
+   SOCIAL PROOF (VSL + GOOGLE REVIEWS)
+   ============================================ */
+.section-proof {
+    background-color: var(--paper);
+    text-align: center;
+}
+
+.proof-video {
+    max-width: 880px;
+    margin: 0 auto 56px;
+}
+
+.proof-video-frame {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background-color: #000;
+    border: 2px solid rgba(194, 168, 89, 0.55);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.18),
+                0 0 0 1px rgba(194, 168, 89, 0.18);
+}
+
+.proof-video-frame > span,
+.proof-video-frame .wistia_embed {
+    position: absolute !important;
+    inset: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.proof-reviews {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* ============================================
    OBJECTION SECTION
    ============================================ */
 .section-objection {
