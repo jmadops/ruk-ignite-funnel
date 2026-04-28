@@ -14,12 +14,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css?v=1">
     <link rel="icon" type="image/png" href="assets/ruk-logo.png">
-    <script src="https://js.stripe.com/v3/"></script>
-    <script src="../shared/funnel.js" defer></script>
     <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
     <script src="https://elfsightcdn.com/platform.js" async></script>
 </head>
 <body>
+
+    <!--
+        DEV TODO — All CTAs currently point to href="#" as placeholders.
+        When the Ontraport checkout URL is provided, find/replace href="#"
+        with the live URL across this file. There are 6 CTAs total:
+        top urgency bar, hero, details section, objection section,
+        final CTA, and the sticky mobile CTA.
+    -->
 
     <!-- ============================================
          TOP URGENCY BAR
@@ -28,7 +34,7 @@
         <div class="container">
             <span class="top-bar-pulse"></span>
             <span class="top-bar-text"><strong>Ohio Ignite:</strong> Saturday, May 16 · Columbus, OH · <strong>Spots capped by venue</strong></span>
-            <a href="#reserve" class="top-bar-cta">Reserve My Spot · $50 →</a>
+            <a href="#" class="top-bar-cta">Reserve My Spot · $50 →</a>
         </div>
     </div>
 
@@ -52,7 +58,7 @@
             </div>
 
             <div class="hero-cta-row">
-                <a href="#reserve" class="btn btn-gold btn-xl">Reserve My Spot · $50</a>
+                <a href="#" class="btn btn-gold btn-xl">Reserve My Spot · $50</a>
             </div>
 
             <div class="hero-meta">
@@ -248,7 +254,7 @@
             </div>
 
             <div class="details-cta">
-                <a href="#reserve" class="btn btn-gold btn-large">Reserve My Spot · $50</a>
+                <a href="#" class="btn btn-gold btn-large">Reserve My Spot · $50</a>
             </div>
         </div>
     </section>
@@ -313,71 +319,8 @@
                 <p class="standout-line standout-gold">You can listen to it again on Monday. Or you can interrupt it on Saturday.</p>
             </div>
             <div class="objection-cta">
-                <a href="#reserve" class="btn btn-gold btn-large">Reserve My Spot · $50</a>
+                <a href="#" class="btn btn-gold btn-large">Reserve My Spot · $50</a>
             </div>
-        </div>
-    </section>
-
-    <!-- ============================================
-         EMBEDDED CHECKOUT
-         ============================================ -->
-    <section class="section-embedded-checkout" id="reserve">
-        <div class="final-cta-bg">
-            <img src="assets/ignite-hero-bg.jpg" alt="" aria-hidden="true">
-            <div class="final-cta-overlay"></div>
-        </div>
-        <div class="container-narrow embedded-checkout-content">
-            <span class="callout-pill callout-pill-gold">One Saturday · One Reset</span>
-            <h2 class="section-heading">RESERVE YOUR SPOT FOR <span class="hl-underline">OHIO IGNITE</span>.</h2>
-            <p class="final-sub">One Saturday morning. The reset you've been circling for years. Coach Matt and a group of Christian men on real ground. Lunch and all event costs included for $50.</p>
-
-            <div class="embed-checkout-card">
-
-                <div class="embed-summary">
-                    <div class="embed-summary-left">
-                        <p class="embed-summary-name">Ohio Ignite · Saturday May 16</p>
-                        <p class="embed-summary-desc">1-Day Christian Men's Experience · Columbus, OH</p>
-                    </div>
-                    <div class="embed-summary-price">
-                        <span class="embed-summary-amount">$50</span>
-                        <span class="embed-summary-note">one-time</span>
-                    </div>
-                </div>
-
-                <div class="embed-step">
-                    <div class="embed-step-header">
-                        <h3 class="embed-step-title">Secure Checkout</h3>
-                        <div class="embed-methods">
-                            <span class="embed-method-chip">Card</span>
-                            <span class="embed-method-chip">Apple&nbsp;Pay</span>
-                            <span class="embed-method-chip">Google&nbsp;Pay</span>
-                        </div>
-                    </div>
-
-                    <div id="checkout" class="embed-stripe-mount">
-                        <div class="embed-stripe-placeholder">
-                            <div class="embed-stripe-icon">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
-                            </div>
-                            <p class="embed-stripe-title">Loading secure checkout…</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="embed-trust">
-                    <div class="embed-trust-line">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2L4 6v6c0 5.5 3.5 10 8 11 4.5-1 8-5.5 8-11V6l-8-4z"/></svg>
-                        <span>Payments processed securely by Stripe. 256-bit SSL encrypted.</span>
-                    </div>
-                    <div class="embed-trust-line">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        <span><strong>$50 covers everything:</strong> the experience, lunch, and all event materials.</span>
-                    </div>
-                </div>
-
-            </div>
-
-            <p class="hero-scarcity">Spots are capped by venue. Once Saturday May 16 is full, the next Ohio Ignite isn't&nbsp;scheduled.</p>
         </div>
     </section>
 
@@ -434,7 +377,7 @@
         <div class="container-narrow">
             <h2 class="section-heading">ONE SATURDAY MORNING. THE RESET YOU'VE BEEN <span class="hl-underline">CIRCLING FOR YEARS</span>.</h2>
             <p class="final-sub">You've spent more than $50 on dinners that didn't change anything. You've spent more than one Saturday on weekends that didn't change anything. This one is built&nbsp;to.</p>
-            <a href="#reserve" class="btn btn-gold btn-xl">Reserve My Spot · $50</a>
+            <a href="#" class="btn btn-gold btn-xl">Reserve My Spot · $50</a>
             <p class="final-disclaimer">Spots are capped by venue · Once Saturday May 16 is full, the next Ohio Ignite isn't scheduled</p>
             <img src="assets/ruk-logo.png" alt="Rise Up Kings" class="final-logo">
         </div>
@@ -457,7 +400,7 @@
     <!-- ============================================
          STICKY MOBILE CTA
          ============================================ -->
-    <a href="#reserve" class="sticky-cta">Reserve My Spot · $50</a>
+    <a href="#" class="sticky-cta">Reserve My Spot · $50</a>
 
     <script>
         (function () {
