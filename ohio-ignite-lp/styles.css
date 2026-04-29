@@ -830,6 +830,39 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.1; font-weight: 900; letter-spacing: -0.
 
 .details-cta { text-align: center; }
 
+.details-map {
+    max-width: 680px;
+    margin: 0 auto 24px;
+    border: 1px solid rgba(194, 168, 89, 0.25);
+    border-radius: 6px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.details-map iframe {
+    display: block;
+    width: 100%;
+    filter: grayscale(0.15);
+}
+
+.details-map-link {
+    display: block;
+    padding: 12px 24px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-bright);
+    text-align: center;
+    text-decoration: none;
+    border-top: 1px solid rgba(194, 168, 89, 0.25);
+    transition: background 0.2s ease;
+}
+
+.details-map-link:hover {
+    background: rgba(194, 168, 89, 0.08);
+}
+
 /* ============================================
    COACH MATT
    ============================================ */
